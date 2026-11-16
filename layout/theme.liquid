@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_lime }}">
+    <title>{{ page_title }}{% if current_tags %} &ndash; {{ current_tags | join: ', ' }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}</title>
+    {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {{ 'glass.css' | asset_url | stylesheet_tag }}
+
+    <style>
+      :root {
+        --lime: {{ settings.color_lime }};
+        --lime-deep: {{ settings.color_lime_deep }};
+        --offwhite: {{ settings.color_offwhite }};
+        --gray: {{ settings.color_gray }};
+        --ink: {{ settings.color_ink }};
+        --glass-bg: rgba(255, 255, 255, {{ settings.glass_opacity | divided_by: 100.0 }});
+        --glass-blur: {{ settings.glass_blur }}px;
+        --curve: {{ settings.curve_radius }}px;
+      }
+    </style>
+
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    {{ content_for_header }}
+  </head>
+
+  <body class="template-{{ template.name | handle }}">
+    <a class="skip-link" href="#MainContent">{{ 'accessibility.skip_to_content' | t }}</a>
+
+    {% section 'header' %}
+
+    <main id="MainContent" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  </body>
+</html>
