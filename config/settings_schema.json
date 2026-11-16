@@ -1,0 +1,37 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Curved Glass",
+    "theme_version": "1.0.0",
+    "theme_author": "Vibe Code",
+    "theme_documentation_url": "https://shopify.dev/docs/themes",
+    "theme_support_url": "https://shopify.dev/docs/themes"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "color", "id": "color_lime", "label": "Deep lime mint", "default": "#0E9F6E" },
+      { "type": "color", "id": "color_lime_deep", "label": "Deep lime mint (dark)", "default": "#0B7A55" },
+      { "type": "color", "id": "color_offwhite", "label": "Off white", "default": "#FAFAF7" },
+      { "type": "color", "id": "color_gray", "label": "Off-white gray", "default": "#E8EAE6" },
+      { "type": "color", "id": "color_ink", "label": "Text", "default": "#1C211E" }
+    ]
+  },
+  {
+    "name": "Glass effect",
+    "settings": [
+      { "type": "range", "id": "glass_opacity", "label": "Glass opacity", "min": 20, "max": 90, "step": 5, "unit": "%", "default": 55 },
+      { "type": "range", "id": "glass_blur", "label": "Glass blur", "min": 4, "max": 40, "step": 2, "unit": "px", "default": 18 },
+      { "type": "range", "id": "curve_radius", "label": "Curved glass radius", "min": 12, "max": 60, "step": 2, "unit": "px", "default": 28 }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      { "type": "text", "id": "social_facebook_link", "label": "Facebook", "info": "https://facebook.com/shopify" },
+      { "type": "text", "id": "social_instagram_link", "label": "Instagram" },
+      { "type": "text", "id": "social_tiktok_link", "label": "TikTok" },
+      { "type": "text", "id": "social_twitter_link", "label": "X (Twitter)" }
+    ]
+  }
+]
