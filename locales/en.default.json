@@ -1,0 +1,42 @@
+{
+  "general": {
+    "page": "Page {{ page }}",
+    "search": "Search",
+    "menu": "Menu",
+    "close": "Close",
+    "cart": "Cart",
+    "account": "Account"
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "previous_slide": "Previous slide",
+    "next_slide": "Next slide",
+    "load_slide": "Load slide {{ index }}"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "sale": "Sale",
+      "quick_view": "Quick view",
+      "from_price": "From {{ price }}"
+    }
+  },
+  "sections": {
+    "hero": {
+      "shop_now": "Shop now"
+    },
+    "top_categories": {
+      "view_all": "View all"
+    },
+    "new_arrivals": {
+      "view_all": "View all"
+    },
+    "combo_offer": {
+      "claim": "Grab the deal"
+    },
+    "future_collection": {
+      "notify": "Notify me"
+    }
+  }
+}
