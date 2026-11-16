@@ -1,0 +1,17 @@
+{
+  "current": {
+    "color_lime": "#0E9F6E",
+    "color_lime_deep": "#0B7A55",
+    "color_offwhite": "#FAFAF7",
+    "color_gray": "#E8EAE6",
+    "color_ink": "#1C211E",
+    "glass_opacity": 55,
+    "glass_blur": 18,
+    "curve_radius": 28,
+    "sections": {
+      "header": {
+        "type": "header"
+      }
+    }
+  }
+}
